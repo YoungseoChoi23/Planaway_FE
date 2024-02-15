@@ -61,7 +61,7 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const SearchForm = styled.form`
+export const HSearchForm = styled.form`
   background-color: #efefef;
   border-radius: 4px;
   display: flex;
@@ -77,7 +77,7 @@ export const SearchForm = styled.form`
   }
 `;
 
-export const Input = styled.input`
+export const HInput = styled.input`
   border: none;
   background-color: #efefef;
   width: 100%;
@@ -92,7 +92,7 @@ export const NavBtn = styled.nav`
   align-items: center;
 `;
 
-export const Button = styled.button`
+export const HButton = styled.button`
   height: 40px;
   border-radius: 4px;
   background-color: white;

@@ -6,10 +6,10 @@ import {
   NavLink,
   NavMenu1,
   NavMenu2,
-  SearchForm,
-  Input,
+  HSearchForm,
+  HInput,
   NavBtn,
-  Button,
+  HButton,
 } from "./HeaderStyle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -52,9 +52,9 @@ const Header = () => {
 
           <NavBtn>
             {isLoggedIn ? (
-              <Button onClick={handleUserClick}>사용자 이름</Button>
+              <HButton onClick={handleUserClick}>사용자 이름</HButton>
             ) : (
-              <Button onClick={handleUserClick}>로그인/회원가입</Button>
+              <HButton onClick={handleUserClick}>로그인/회원가입</HButton>
             )}
           </NavBtn>
         </NavMenu1>
@@ -72,16 +72,16 @@ const Header = () => {
             </NavLink>
           </MenuWrapper>
 
-          <SearchForm onSubmit={handleSubmit}>
+          <HSearchForm onSubmit={handleSubmit}>
             <FontAwesomeIcon icon={faMagnifyingGlass} />{" "}
-            <Input
+            <HInput
               placeholder="가고 싶은 국가나 도시를 검색하세요."
               value={searchTerm}
               ref={searchRef}
               onChange={(e) => setSearchTerm(e.target.value)}
               type="text"
             />
-          </SearchForm>
+          </HSearchForm>
         </NavMenu2>
       </Nav>
       <hr />
