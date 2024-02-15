@@ -61,7 +61,7 @@ const Header = () => {
 
         <NavMenu2>
           <MenuWrapper>
-            <NavLink to="/plandetail" activestyle="true">
+            <NavLink to="/uploadplan" activestyle="true">
               여행 계획 시작하기
             </NavLink>
             <NavLink to="/planlist" activestyle="true">
