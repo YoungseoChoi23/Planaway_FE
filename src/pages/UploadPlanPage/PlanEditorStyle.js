@@ -16,7 +16,7 @@ export const PEWrapper = styled.div`
   }
 `;
 
-export const PTInput = styled.input`
+export const PEInput = styled.input`
   border: none;
   font-family: "Pretendard-Regular";
   color: #2c2c2c;
@@ -30,6 +30,7 @@ export const PEContentTitle = styled.div`
   width: 404px;
   display: flex;
   border-bottom: 1px solid black;
+  margin-bottom: 21px;
 
   svg {
     margin: 0 18px 10px 0;
@@ -40,4 +41,13 @@ export const PEContentTitle = styled.div`
     color: #2c2c2c;
     margin: 0 0 7px 0;
   }
+`;
+
+export const PEMap = styled.div`
+  margin: 0 24px 52px 0;
+`;
+
+export const PEMapWrapper = styled.div`
+  display: flex;
+  align-items: flex-start;
 `;
