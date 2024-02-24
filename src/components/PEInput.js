@@ -24,14 +24,14 @@ const PEInput = ({
             <FontAwesomeIcon icon={faMagnifyingGlass} />
 
             <PEInputForm
-              name="one"
+              name="city"
               type="text"
               defaultValue={item.one}
               onChange={(e) => onChange(e, item.id)}
             />
 
             {index > 0 && inputItems[index - 1] ? (
-              <PlusMinusBtn onClick={() => DeleteInput(item.id)}>
+              <PlusMinusBtn key={item.id} onClick={() => DeleteInput(item.id)}>
                 -
               </PlusMinusBtn>
             ) : (
@@ -41,7 +41,9 @@ const PEInput = ({
         );
       })}
       <BtnWrapper>
-        <PlusMinusBtn onClick={() => AddInput()}> + </PlusMinusBtn>
+        {inputItems.length < 6 && (
+          <PlusMinusBtn onClick={() => AddInput()}> + </PlusMinusBtn>
+        )}
       </BtnWrapper>
     </PECity>
   );
