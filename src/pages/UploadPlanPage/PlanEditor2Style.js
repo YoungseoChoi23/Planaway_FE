@@ -73,6 +73,7 @@ export const OpenDetailBtn = styled.button`
 `;
 
 export const ODPWrapper = styled.div`
+  display: flex;
   width: 828px;
   border: 1px solid #efefef;
 `;
@@ -120,4 +121,49 @@ export const ODPDaysInput = styled.input`
   font-size: 14px;
 `;
 
-export const ODPDetail = styled.div``;
+export const ODPDetail = styled.div`
+  margin: 27px 21px 0 103px;
+`;
+
+export const ODPDetailDay = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 595px;
+  border-bottom: 1px solid #2c2c2c;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+`;
+
+export const ODPInputForm = styled.input`
+  border: none;
+  border-left: 2px solid #2c2c2c;
+  padding-left: 8px;
+  width: 80%;
+
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  color: #2c2c2c;
+`;
+
+export const ODPOpenBtn = styled.button`
+  border: none;
+  background-color: white;
+  cursor: pointer;
+
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  color: #9b9b9b;
+`;
+
+export const DetailText = styled.textarea`
+  width: 575px;
+  height: 280px;
+  margin-bottom: 21px;
+  padding: 10px;
+  border: 1px solid #efefef;
+  outline-color: #efefef;
+
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+`;

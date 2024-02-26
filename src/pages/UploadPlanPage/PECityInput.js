@@ -5,11 +5,11 @@ import {
   PESearchForm,
   PECity,
   BtnWrapper,
-} from "./PEInputStyle";
+} from "./PECityInputStyle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-const PEInput = ({
+const PECityInput = ({
   inputItems,
   inputAddId,
   AddInput,
@@ -20,7 +20,7 @@ const PEInput = ({
     <PECity>
       {inputItems.map((item, index) => {
         return (
-          <PESearchForm>
+          <PESearchForm key={item.id}>
             <FontAwesomeIcon icon={faMagnifyingGlass} />
 
             <PEInputForm
@@ -49,4 +49,4 @@ const PEInput = ({
   );
 };
 
-export default PEInput;
+export default PECityInput;
