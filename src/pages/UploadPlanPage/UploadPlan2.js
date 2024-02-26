@@ -1,10 +1,10 @@
 import Header from "../../components/Header.js";
 import PlanSideBar from "../../components/PlanSideBar.js";
-import { Container } from "../../Layout";
-import { UPWrapper } from "./PlanEditorStyle.js";
-import PlanEditor from "./PlanEditor.js";
+import { Container } from "../../Layout.js";
+import { UPWrapper } from "./PlanEditor2Style.js";
+import PlanEditor from "./PlanEditor2.js";
 
-const UploadPlan = () => {
+const UploadPlan2 = () => {
   return (
     <>
       <Header />
@@ -18,4 +18,4 @@ const UploadPlan = () => {
   );
 };
 
-export default UploadPlan;
+export default UploadPlan2;
